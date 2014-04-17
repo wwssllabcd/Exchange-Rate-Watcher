@@ -85,31 +85,85 @@
 					removeAllChild("erw-vbox");
 					msg = http_request.responseText;
 					
-					
-					
+					addLine("erw-vbox","幣別： 現金買入 , 即期買入");
 					//showInTooltip("erw-vbox",msg);
 					
 					var result;
 					result = findKeyWord("美金 (USD)",msg,2);
-					addLine("erw-vbox","美金：" + result);
-					
-					result = findKeyWord("歐元 (EUR)",msg,2);
-					addLine("erw-vbox","歐元：" + result);
+					result2 = findKeyWord("美金 (USD)",msg,4);
+					addLine("erw-vbox","美金：" + result +" , "+ result2);
 					
 					result = findKeyWord("港幣 (HKD)",msg,2);
-					addLine("erw-vbox","港幣：" + result);
+					result2 = findKeyWord("港幣 (HKD)",msg,4);
+					addLine("erw-vbox","港幣：" + result +" , "+ result2);
 					
 					result = findKeyWord("英鎊 (GBP)",msg,2);
-					addLine("erw-vbox","英鎊：" + result);
+					result2 = findKeyWord("英鎊 (GBP)",msg,4);
+					addLine("erw-vbox","英鎊：" + result +" , "+ result2);
 					
 					result = findKeyWord("澳幣 (AUD)",msg,2);
-					addLine("erw-vbox","澳幣：" + result);
+					result2 = findKeyWord("澳幣 (AUD)",msg,4);
+					addLine("erw-vbox","澳幣：" + result +" , "+ result2);
 					
 					result = findKeyWord("加拿大幣 (CAD)",msg,2);
-					addLine("erw-vbox","加拿大幣：" + result);
+					result2 = findKeyWord("加拿大幣 (CAD)",msg,4);
+					addLine("erw-vbox","加拿大幣：" + result +" , "+ result2);
+					
+					result = findKeyWord("新加坡幣 (SGD)",msg,2);
+					result2 = findKeyWord("新加坡幣 (SGD)",msg,4);
+					addLine("erw-vbox","新加坡幣：" + result +" , "+ result2);
+					
+					result = findKeyWord("瑞士法朗 (CHF)",msg,2);
+					result2 = findKeyWord("瑞士法朗 (CHF)",msg,4);
+					addLine("erw-vbox","瑞士法朗：" + result +" , "+ result2);
 					
 					result = findKeyWord("日圓 (JPY)",msg,2);
-					addLine("erw-vbox","日圓：" + result);
+					result2 = findKeyWord("日圓 (JPY)",msg,4);
+					addLine("erw-vbox","日圓：" + result +" , "+ result2);
+					
+					result = findKeyWord("南非幣 (ZAR)",msg,2);
+					result2 = findKeyWord("南非幣 (ZAR)",msg,4);
+					addLine("erw-vbox","南非幣 ：" + result +" , "+ result2);
+					
+					result = findKeyWord("瑞典幣 (SEK)",msg,2);
+					result2 = findKeyWord("瑞典幣 (SEK)",msg,4);
+					addLine("erw-vbox","瑞典幣：" + result +" , "+ result2);
+					
+					result = findKeyWord("紐元 (NZD)",msg,2);
+					result2 = findKeyWord("紐元 (NZD)",msg,4);
+					addLine("erw-vbox","紐元：" + result +" , "+ result2);
+					
+					result = findKeyWord("泰幣 (THB)",msg,2);
+					result2 = findKeyWord("泰幣 (THB)",msg,4);
+					addLine("erw-vbox","泰幣：" + result +" , "+ result2);
+					
+					result = findKeyWord("菲國比索 (PHP)",msg,2);
+					result2 = findKeyWord("菲國比索 (PHP)",msg,4);
+					addLine("erw-vbox","菲國比索：" + result +" , "+ result2);
+					
+					result = findKeyWord("印尼幣 (IDR)",msg,2);
+					result2 = findKeyWord("印尼幣 (IDR)",msg,4);
+					addLine("erw-vbox","印尼幣：" + result +" , "+ result2);
+
+					result = findKeyWord("歐元 (EUR)",msg,2);
+					result2 = findKeyWord("歐元 (EUR)",msg,4);
+					addLine("erw-vbox","歐元：" + result +" , "+ result2);
+					
+					result = findKeyWord("韓元 (KRW)",msg,2);
+					result2 = findKeyWord("韓元 (KRW)",msg,4);
+					addLine("erw-vbox","韓元：" + result +" , "+ result2);
+					
+					result = findKeyWord("越南盾 (VND)",msg,2);
+					result2 = findKeyWord("越南盾 (VND)",msg,4);
+					addLine("erw-vbox","越南盾：" + result +" , "+ result2);
+					
+					result = findKeyWord("馬來幣 (MYR)",msg,2);
+					result2 = findKeyWord("馬來幣 (MYR)",msg,4);
+					addLine("erw-vbox","馬來幣 ：" + result +" , "+ result2);
+					
+					result = findKeyWord("人民幣 (CNY)",msg,2);
+					result2 = findKeyWord("人民幣 (CNY)",msg,4);
+					addLine("erw-vbox","人民幣：" + result +" , "+ result2);
 		
 				}catch(err){
 					removeAllChild("erw-vbox");	
