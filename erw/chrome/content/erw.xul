@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="Big5"?>
+<overlay id="erw" 
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+<script type="application/x-javascript" src="chrome://erw/content/erw.js" />
+<statusbar id="status-bar">
+	<statusbarpanel id="abc-status"
+						label="ERW"
+						tooltip="erw-tooltip"
+						onmouseover="show();" />
+</statusbar>
+
+ <window id="main-window">
+	<tooltip id="erw-tooltip" noautohide="true" orient="vertical" position="before_start" style="padding:2px;">
+		<vbox id="erw-vbox">
+			<label id = "111" value=" Orz " style="margin:2px;"/>
+		</vbox>
+	</tooltip>
+ </window>
+</overlay>

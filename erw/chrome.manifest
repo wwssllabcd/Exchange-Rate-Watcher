@@ -1,0 +1,2 @@
+content erw jar:chrome/erw.jar!/content/
+overlay chrome://browser/content/browser.xul chrome://erw/content/erw.xul
