@@ -2,9 +2,9 @@
 <overlay id="erw" 
          xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 <script type="application/x-javascript" src="chrome://erw/content/erw.js" />
-<statusbar id="status-bar">
+<statusbar id="TabsToolbar">
 	<statusbarpanel id="abc-status"
-						label="ERW"
+						label="§Y®É¶×²v"
 						tooltip="erw-tooltip"
 						onmouseover="show();" />
 </statusbar>
