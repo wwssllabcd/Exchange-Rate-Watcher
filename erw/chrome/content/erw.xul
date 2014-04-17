@@ -4,7 +4,7 @@
 <script type="application/x-javascript" src="chrome://erw/content/erw.js" />
 <statusbar id="TabsToolbar">
 	<statusbarpanel id="abc-status"
-						label="�Y�ɶײv"
+						label="即時匯率"
 						tooltip="erw-tooltip"
 						onmouseover="show();" />
 </statusbar>

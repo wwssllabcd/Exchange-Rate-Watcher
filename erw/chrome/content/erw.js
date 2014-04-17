@@ -1,4 +1,4 @@
-﻿	var http_request = false;
+	var http_request = false;
 	var msg;
 
 	//Ajax的部份
